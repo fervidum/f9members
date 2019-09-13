@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Coding Standards">
+	<description>Sniffs for WordPress code</description>
+
+	<!-- Check all PHP files in directory tree by default. -->
+	<arg name="extensions" value="php" />
+	<file>.</file>
+    <exclude-pattern>node_modules</exclude-pattern>
+    <exclude-pattern>vendor</exclude-pattern>
+
+	<!-- Show progress and sniff codes in all reports -->
+	<arg value="sp" />
+
+	<config name="installed_paths" value="vendor/wp-coding-standards/wpcs" />
+
+	<!-- Rules -->
+	<rule ref="WordPress">
+		<exclude name="Generic.CodeAnalysis" />
+		<exclude name="Generic.Commenting.DocComment" />
+		<exclude name="Generic.Formatting.MultipleStatementAlignment" />
+		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma" />
+		<exclude name="Generic.PHP.LowerCaseType.TypeCastFound" />
+		<exclude name="Generic.WhiteSpace" />
+		<exclude name="PSR2.Classes.PropertyDeclaration.Underscore" />
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonCASE" />
+		<exclude name="PEAR.Files.IncludingFile.BracketsNotRequired" />
+		<exclude name="PEAR.Functions.FunctionCallSignature" />
+		<exclude name="Squiz.Commenting" />
+		<exclude name="Squiz.ControlStructures.ControlSignature" />
+		<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing" />
+		<exclude name="Squiz.PHP.CommentedOutCode.Found" />
+		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
+		<exclude name="Squiz.PHP.DisallowSizeFunctionsInLoops.Found" />
+		<exclude name="Squiz.PHP.EmbeddedPhp" />
+		<exclude name="Squiz.PHP.NonExecutableCode.Unreachable" />
+		<exclude name="Squiz.Scope.MethodScope.Missing" />
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines" />
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing" />
+		<exclude name="WordPress.Arrays.ArrayIndentation" />
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions" />
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoComma" />
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned" />
+		<exclude name="WordPress.CodeAnalysis.AssignmentInCondition.Found" />
+		<exclude name="WordPress.DB.DirectDatabaseQuery" />
+		<exclude name="WordPress.DB.SlowDBQuery" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.PHP.DevelopmentFunctions" />
+		<exclude name="WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode" />
+		<exclude name="WordPress.PHP.DontExtract.extract_extract" />
+		<exclude name="WordPress.PHP.StrictComparisons.LooseComparison" />
+		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict" />
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+		<exclude name="WordPress.Security" />
+		<exclude name="WordPress.WhiteSpace" />
+		<exclude name="WordPress.WP.AlternativeFunctions.json_encode_json_encode" />
+		<exclude name="WordPress.WP.GlobalVariablesOverride.Prohibited" />
+		<exclude name="WordPress.WP.I18n" />
+	</rule>
+
+</ruleset>

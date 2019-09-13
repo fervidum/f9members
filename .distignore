@@ -1,0 +1,11 @@
+.distignore
+.editorconfig
+.git
+.gitignore
+.DS_Store
+Thumbs.db
+composer.json
+composer.lock
+phpcs.xml
+vendor
+node_modules
